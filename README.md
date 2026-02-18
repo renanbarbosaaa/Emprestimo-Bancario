@@ -45,4 +45,36 @@
         <p>Initially, variables were being lost between functions. I solved this by implementing <strong>return</strong> statements, allowing functions to pass validated data back to the main controller.</p>
 
         <h3>2. Preventing Memory Leaks</h3>
-        <p>I replaced recursive function calls (a
+        <p>I replaced recursive function calls (a function calling itself) with a <strong>while</strong> loop and <strong>break</strong> conditions. This keeps memory usage stable, even when processing many clients.</p>
+
+        <h3>3. Cross-Platform Support</h3>
+        <p>I added a conditional check to detect the operating system, ensuring the terminal clearing command works correctly on Windows (cls) or Unix/Mac (clear).</p>
+    </section>
+
+    <section>
+        <h2>💻 How to Run</h2>
+        <ol>
+            <li>Clone the repository to your local machine.</li>
+            <li>Open your terminal or command prompt.</li>
+            <li>Navigate to the project folder.</li>
+            <li>Run the command: <code>python main.py</code></li>
+        </ol>
+    </section>
+
+    <hr id="portuguese">
+
+    <section>
+        <h2>🇧🇷 Versão em Português</h2>
+        <p>O conteúdo em português pode ser acessado logo abaixo (ou em um arquivo separado). Clique no link abaixo para retornar ao topo.</p>
+        <p><a href="#">Back to Top / Voltar ao Topo</a></p>
+    </section>
+
+    <footer>
+        <hr>
+        <h2>✍️ Author</h2>
+        <p><strong>Renan</strong></p>
+        <p>Connect with me on <a href="https://linkedin.com/in/renanbarbosaa">LinkedIn</a> or check my other projects on <a href="https://github.com/renanbarbosaaa">GitHub</a>.</p>
+    </footer>
+
+</body>
+</html>

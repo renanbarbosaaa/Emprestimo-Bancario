@@ -19,7 +19,7 @@
         <li><strong>Menu Interativo:</strong> Interface profissional com limpeza de tela e um laço operacional para processar vários clientes em uma única sessão.</li>
     </ul>
 
-    [Image of a logical flowchart for a loan approval process]
+    
 
     <h2>📋 Regras de Negócio</h2>
     <ul>
@@ -33,12 +33,12 @@
     <h3>1. Escopo de Funções e Passagem de Dados</h3>
     <p>Inicialmente, as variáveis se perdiam entre as funções. Resolvi isso implementando comandos de retorno (<strong>return</strong>), permitindo que as funções passassem os dados validados de volta para o controlador principal.</p>
     
-    [Image of a function diagram showing parameters as input and return values as output]
+    
 
     <h3>2. Prevenção de Vazamento de Memória</h3>
     <p>Substituí chamadas de funções recursivas (uma função chamando ela mesma) por um laço <strong>while</strong> e condições de parada (<strong>break</strong>). Isso mantém o uso da memória estável, mesmo processando muitos clientes.</p>
     
-    [Image of a flowchart showing a while loop for user input repetition]
+    
 
     <h3>3. Suporte Multiplataforma</h3>
     <p>Adicionei uma verificação condicional para detectar o sistema operacional, garantindo que o comando de limpar o terminal funcione corretamente no Windows (cls) ou Unix/Mac (clear).</p>
@@ -49,4 +49,9 @@
         <li>Abra seu terminal ou prompt de comando.</li>
         <li>Navegue até a pasta do projeto.</li>
         <li>Execute o comando: <code>python main.py</code></li>
-    </ol
+    </ol>
+
+    <hr>
+
+</body>
+</html>

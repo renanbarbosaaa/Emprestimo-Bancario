@@ -1,41 +1,48 @@
-Claro, aqui está o conteúdo para o seu README de forma simplificada, apenas com textos e sem tabelas ou colunas:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>README - Bank Loan Simulator</title>
+</head>
+<body>
 
-Bank Loan Simulator System
-A professional Python terminal application designed to simulate bank credit analysis and loan installments. This project showcases the implementation of financial business rules and robust data validation.
+    <nav>
+        <p>Language / Idioma: <strong>English</strong> | <a href="READMEpt.md">Versão em Português</a></p>
+    </nav>
 
-Features
-Robust Name Validation: Ensures customer names contain only letters using specific string methods.
+    <header>
+        <h1>🏦 Bank Loan Simulator System</h1>
+    </header>
 
-Safe Data Input: Handles invalid entries like letters in numeric fields using error treatment to prevent crashes.
+    <section>
+        <p>A professional terminal-based application developed in Python to simulate bank credit analysis and loan installments. This project demonstrates the implementation of financial business rules and robust data validation.</p>
+    </section>
 
-Automated Credit Analysis: Evaluates eligibility based on income and debt-to-income ratios.
+    <section>
+        <h2>🚀 Features</h2>
+        <ul>
+            <li><strong>Name Validation:</strong> Ensures customer names contain only letters through specific string manipulation methods.</li>
+            <li><strong>Safe Data Input:</strong> Manages invalid entries, such as letters in numeric fields, using error handling (try/except) to prevent application crashes.</li>
+            <li><strong>Automated Credit Analysis:</strong> Evaluates eligibility based on income and debt-to-income ratios.</li>
+            <li><strong>Financial Simulation:</strong> Calculates installments and the total repayment amount with a 2% monthly interest rate.</li>
+            <li><strong>Interactive Menu:</strong> Professional interface with screen clearing and an operational loop to process multiple clients in a single session.</li>
+        </ul>
+    </section>
 
-Financial Simulation: Calculates installments and total repayment with a 2% monthly interest rate.
+    <section>
+        <h2>📋 Business Rules</h2>
+        <ul>
+            <li><strong>Minimum Income:</strong> Must be greater than R$ 2,000.00.</li>
+            <li><strong>Installment Limit:</strong> Monthly payment cannot exceed 30% of the customer's gross income.</li>
+            <li><strong>Interest Rate:</strong> 2% simple interest per month applied to the total duration.</li>
+        </ul>
+    </section>
 
-Interactive Menu: Professional interface with screen clearing and an operational loop to process multiple clients.
+    <section>
+        <h2>🛠️ Technical Challenges & Solutions</h2>
 
-Business Rules
-Minimum Income: Must be greater than R$ 2,000.00.
+        <h3>1. Function Scope and Data Hand-off</h3>
+        <p>Initially, variables were being lost between functions. I solved this by implementing <strong>return</strong> statements, allowing functions to pass validated data back to the main controller.</p>
 
-Installment Limit: Monthly payment cannot exceed 30% of the customer's gross income.
-
-Interest Rate: Simple interest of 2% per month applied to the total duration.
-
-Technical Challenges and Solutions
-Function Scope and Data Hand-off:
-Initially, variables were getting lost between functions. I solved this by implementing return statements, allowing functions to pass validated data back to the main controller.
-
-Preventing Memory Leaks:
-I replaced recursive function calls with a while loop and break conditions. This keeps memory usage stable even when processing many clients in a single session.
-
-Cross-Platform Support:
-I added a conditional check to detect the operating system, ensuring the terminal clears correctly on Windows, Linux, or Mac.
-
-How to Run
-Clone the repository to your local machine.
-
-Open your terminal or command prompt.
-
-Navigate to the project folder.
-
-Run the command: python main.py
+        <h3>2. Preventing Memory Leaks</h3>
+        <p>I replaced recursive function calls (a
